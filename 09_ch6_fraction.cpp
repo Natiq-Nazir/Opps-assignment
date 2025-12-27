@@ -1,0 +1,2 @@
+#include<iostream>
+using namespace std; class frac{int n,d;public:void get(){char c;cin>>n>>c>>d;} frac add(frac f){return frac(n*f.d+f.n*d,d*f.d);} frac(int a=0,int b=1):n(a),d(b){} void show(){cout<<n<<"/"<<d;} }; int main(){frac a,b,c; a.get(); b.get(); c=a.add(b); c.show();}

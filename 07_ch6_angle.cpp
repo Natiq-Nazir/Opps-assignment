@@ -1,0 +1,2 @@
+#include<iostream>
+using namespace std; class angle{int d;float m;char c;public:angle(int a=0,float b=0,char x='N'):d(a),m(b),c(x){} void get(){cin>>d>>m>>c;} void show(){cout<<d<<" "<<m<<" "<<c;} }; int main(){angle a(149,34.8,'W'); a.show();}

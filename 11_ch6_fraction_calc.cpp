@@ -1,0 +1,2 @@
+#include<iostream>
+using namespace std; class frac{long n,d;public:frac(long a=0,long b=1):n(a),d(b){} frac add(frac f){return frac(n*f.d+f.n*d,d*f.d);} void show(){cout<<n<<"/"<<d;} }; int main(){frac a(1,2),b(1,3); frac c=a.add(b); c.show();}

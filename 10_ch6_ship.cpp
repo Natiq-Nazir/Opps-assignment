@@ -1,0 +1,2 @@
+#include<iostream>
+using namespace std; class angle{int d;float m;char c;public:void get(){cin>>d>>m>>c;} }; class ship{static int cnt;int id;angle la,lo;public:ship(){id=++cnt;} void get(){la.get();lo.get();} void show(){cout<<id;} }; int ship::cnt=0; int main(){ship s[3]; for(int i=0;i<3;i++)s[i].get(); for(int i=0;i<3;i++)s[i].show();}

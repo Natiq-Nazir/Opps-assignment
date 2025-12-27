@@ -1,0 +1,2 @@
+#include<iostream>
+using namespace std; class toll{unsigned int c; double cash; public:toll():c(0),cash(0){} void pay(){c++;cash+=0.5;} void nopay(){c++;} void show(){cout<<c<<" "<<cash;}}; int main(){toll t;t.pay();t.nopay();t.show();}

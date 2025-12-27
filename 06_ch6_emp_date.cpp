@@ -1,0 +1,2 @@
+#include<iostream>
+using namespace std; enum etype{lab,sec,man}; class date{int d,m,y;public:void get(){char c;cin>>m>>c>>d>>c>>y;} void show(){cout<<m<<"/"<<d<<"/"<<y;} }; class emp{int id;float sal;date h;etype t;public:void get(){int x;cin>>id>>sal;h.get();cin>>x;t=etype(x);} void show(){cout<<id<<" "<<sal<<" ";h.show();}}; int main(){emp e[3]; for(int i=0;i<3;i++)e[i].get(); for(int i=0;i<3;i++)e[i].show();}

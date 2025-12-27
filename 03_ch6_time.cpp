@@ -1,0 +1,2 @@
+#include<iostream>
+using namespace std; class Time{int h,m,s;public:Time(int a=0,int b=0,int c=0):h(a),m(b),s(c){} Time add(Time t){Time r; r.s=s+t.s; r.m=m+t.m+r.s/60; r.h=h+t.h+r.m/60; r.s%=60; r.m%=60; return r;} void show(){cout<<h<<":"<<m<<":"<<s;}}; int main(){Time t1(2,30,40),t2(1,40,30); Time t3=t1.add(t2); t3.show();}

@@ -1,0 +1,2 @@
+#include<iostream>
+using namespace std; class emp{int id;float sal;public:void get(){cin>>id>>sal;} void show(){cout<<id<<" "<<sal;} }; int main(){emp e[3]; for(int i=0;i<3;i++)e[i].get(); for(int i=0;i<3;i++)e[i].show();}
